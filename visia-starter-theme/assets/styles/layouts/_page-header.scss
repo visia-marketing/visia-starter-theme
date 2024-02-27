@@ -1,0 +1,116 @@
+.page-header {
+  height: 270px;
+  position: relative;
+  width: 100%;
+
+  @include breakpoint(medium) {
+    height: 350px;
+  }
+
+  &.has-image {  
+    //background: rgba($primary,.75);
+    background: rgba($secondary,.30);
+
+    .page-header-image {
+      height: 100%;
+      position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+      z-index: -1;
+
+      &.page-header-image-cover {
+        width: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+    .page-header-content-div {
+      overflow: hidden;
+      position: absolute;
+        bottom: 20%;
+        //bottom: 50%;
+        //transform: translateY(-50%);
+      width: 100%;
+
+      &-left {
+        text-align: left;
+      }
+      
+      //Use this if you want to wrap the header content in something (like a background color)
+      .page-header-content {
+        //padding: 2rem 2rem 2rem 0;
+        //position: relative;
+      }
+
+      h1 {
+        color: $white;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1;
+        position: relative;
+
+        @include breakpoint(medium) {
+          font-size: 2.65rem;
+          margin-bottom: 22px;
+        }
+
+      }
+
+      p {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.45;
+        margin-bottom: 0;
+
+        @include breakpoint(medium) {
+          font-size: 1.125rem;
+        }
+
+      }
+
+    }
+
+  }
+
+  &.no-image {
+    height: auto;
+    padding: 2.5rem 0;
+
+    .page-header-content-div {
+      position: relative;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0;
+
+      @include breakpoint(medium) {
+        font-size: 2.25rem;
+      }
+
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.45;
+      margin: 1rem 0 0;
+      text-shadow: 2px 2px 2px rgba(#000,.35);
+    }
+
+  }
+
+  &-none {
+    color: $primary;
+    margin: 2rem 0;
+  }
+
+}

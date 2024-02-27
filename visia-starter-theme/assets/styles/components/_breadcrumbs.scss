@@ -1,0 +1,17 @@
+.page-breadcrumbs {
+  color: $breadcrumb-text-color;
+  font-size: .925rem;
+  margin: 1.35rem 0 3rem;
+
+  span > a > span {
+    color: $breadcrumb-anchor-color;
+    font-weight: 600;
+  }
+
+  span {
+    //color: $green;
+    font-size: .925rem;
+    font-weight: 400;
+  }
+
+}

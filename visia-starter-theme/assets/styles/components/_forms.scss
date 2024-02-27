@@ -1,0 +1,69 @@
+.gform_wrapper {
+  margin: 0 auto 1rem !important;
+
+  .gfield_checkbox li input[type=checkbox] { vertical-align: baseline !important;}
+
+  .gfield_checkbox li input[type=checkbox], .gfield_radio li input[type=radio] {
+    display: inline-block;
+    margin-bottom: .33rem;
+  }
+
+  .gfield_checkbox li input[type=checkbox]+input[type=text], .gfield_radio li input[type=radio]+input[type=text] {
+    display: inline-block;
+    height: 2rem;
+    margin-top: 2px;
+  }
+
+  .gfield {
+      margin-top: 8px !important;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &.field_description_below+li.gsection {
+        margin: 40px 16px 12px 0 !important;
+      }
+
+      div.ginput_container {
+          margin-top: 4px;
+      }
+
+      label {
+        color: $primary;
+        font-size: .95rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      [type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 2rem;
+        margin: 0 0 1rem;
+        padding: .5rem;
+        border: 1px solid #cacaca;
+        border-radius: 4px;
+        background-color: #fefefe;
+        box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+        font-family: inherit;
+        font-size: .925rem;
+        font-weight: 400;
+        color: #5c5c5c;
+        transition: box-shadow .5s,border-color .25s ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      select {
+        height: 2rem;
+        padding-right: 30px;
+      }
+
+    }
+
+
+
+}

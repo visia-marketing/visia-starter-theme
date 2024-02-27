@@ -1,0 +1,73 @@
+// Boxes and Drop Shadows
+
+$box-shadow:  0 3px 6px rgba(0,0,0,0.15), 0 4px 4px rgba(0,0,0,0.18); //https://codepen.io/sdthornton/pen/wBZdXq
+$box-shadow-2: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+img.box-shadow {
+	box-shadow: $box-shadow; //https://codepen.io/sdthornton/pen/wBZdXq
+}
+
+.box {
+	background-color: #fff;
+	border: 1px solid $grey-rule;
+	overflow: hidden;
+	padding: 1rem;
+
+	&.box-no-border {
+		border: none;
+	}
+
+	&.box-rounded {
+		border-radius: 12px;
+	}
+
+	&.box-grey {
+		background-color: $grey-bg;
+	}
+
+	&.box-shadow {
+		border: 1px solid lighten($grey-rule,5%);
+		box-shadow: $box-shadow; //https://codepen.io/sdthornton/pen/wBZdXq
+	}
+
+	&.box-image {
+		height: 200px;
+		overflow: hidden;
+		width: 100%;
+
+    img {
+    	height: 200px;
+    	object-fit: cover; 
+    	width: 120%;
+    }
+
+  }  
+
+	&.box-image-expand {
+
+		img {
+    	height: 200px;
+    	margin: -1rem -1rem 1rem;
+    	object-fit: cover; 
+    	width: 120%;
+    	max-width: 120%;
+    }
+		
+	}
+
+	 
+
+	&.box-thumb {
+		height: 100px;
+		line-height: 100px;
+		//width: 100%;
+    text-align: center;   
+
+		img {
+			line-height: 100px;
+			height: 60px;
+		}
+
+	}
+
+}

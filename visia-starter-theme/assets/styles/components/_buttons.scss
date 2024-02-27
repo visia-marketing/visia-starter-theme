@@ -1,0 +1,42 @@
+.button {
+	background-color: $primary;
+	border-radius: 30px;
+	color: #fff;
+	font-family: $sans;
+	font-size: 14px !important;
+	font-weight: 600;
+	margin-top: 1rem;
+	padding: 8px 25px 8px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: darken($primary,7%);
+	}
+
+	&.button-wide {
+		display: block;
+	}
+
+	&.white {
+		background-color: #fff;
+		color: $primary;
+
+		&:hover {
+			color: $primary;
+		}
+
+	}
+
+	&.button-outline {
+		background-color: transparent;
+		border: 1px solid $primary;
+		color: $primary;
+	}
+
+	&.small {
+		font-size: 14px !important;
+		padding: 7px 18px 7px;
+	}
+
+}
+

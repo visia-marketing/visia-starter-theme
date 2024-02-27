@@ -1,0 +1,25 @@
+//
+// FAQs Templates
+//
+
+.faq-template {
+
+	h2 {
+		font-size: 26px;
+	}
+
+	.accordion {
+		margin-bottom: 3rem;
+
+		.accordion-title {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+
+		.accordion-content {
+			font-size: .925rem;
+		}
+
+	}
+
+}

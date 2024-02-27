@@ -1,0 +1,25 @@
+//
+// Gallery Templates
+//
+
+.gallery-template {
+
+	.gallery-content {
+		padding: 3rem 0;
+
+		h2 {
+	    font-size: 2.25rem;
+	    font-weight: 500;
+	    line-height: 1.3;
+	    width: 750px;
+	    max-width: 90%;
+	  }
+
+	}
+
+	.gallery-gallery {
+		background-color: #f6f6f6;
+		padding: 4rem 0;
+	}
+
+}

@@ -1,0 +1,14 @@
+// Used to align content in center
+.center {
+  text-align: center;
+}
+
+// Remove focus outline
+:focus {
+  outline: none;
+}
+
+// anchor transitions
+a, button, .button, [type=submit] {
+  transition: all 0.25s ease;
+}

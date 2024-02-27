@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////// 
+// 
+// Theme @imports
+// 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Import Foundation variables
+@import "common/variables";
+
+
+///////////////////////////////////////////////
+
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/foundation-sites/scss/foundation.scss";
+// endbower
+
+// Motion UI - Comment out if you do not  need it
+@import '../../bower_components/motion-ui/motion-ui';
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Foundation
+@include foundation-everything;
+
+
+///////////////////////////////////////////////
+
+
+// Font Awesome - Comment out if you do not need it
+//@import "font-awesome/scss/font-awesome";
+
+// Slick Carousel - works better than orbit
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+
+// Extras
+@import "extras/simple-lightbox";
+
+
+///////////////////////////////////////////////
+
+
+@import "common/global";
+@import "common/helpers";
+
+@import "components/boxes";
+@import "components/breadcrumbs";
+@import "components/buttons";
+@import "components/forms";
+@import "components/misc";
+@import "components/wp-classes";
+
+@import "layouts/page-content";
+@import "layouts/page-header";
+@import "layouts/posts";
+@import "layouts/sidebar";
+@import "layouts/site-header";
+@import "layouts/site-footer";
+@import "layouts/tinymce";
+
+@import "flexible/flexible";
+
+// Custom Pages
+@import "pages/home";
+
+// Custom Templates
+//@import "templates/applications";
+//@import "templates/capabilities";
+//@import "templates/gallery";
+//@import "templates/faq";
+
+
+
+
+
+
+
+
+
+
+

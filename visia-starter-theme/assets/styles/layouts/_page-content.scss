@@ -1,0 +1,57 @@
+.page-content-wrapper {
+
+  .page-content {
+    min-height: 400px;
+    padding: 3rem 0 3rem;
+
+    ul,ol {
+    
+      li {
+        padding-bottom: .5rem;
+      }
+
+    }
+
+    table {
+      border: 1px solid #e7e7e7;
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin-bottom: 3rem;
+
+      thead {
+        background: $primary;
+        color: #fff;
+      }
+
+      tr {
+        
+      }
+
+    }
+
+    figcaption {
+      padding: .66rem;
+      font-size: .875rem;
+      color: #747474;
+    }
+
+    .callout {
+      background: rgba(#efefef, .25);
+      border: 1px solid lighten($primary,10%);
+      border-top: 5px solid $primary;
+    }
+
+    .block-wrapper {
+      background: rgba(#efefef, .25);
+      border: 1px solid #efefef;
+      padding: .66rem;
+
+      p {
+        margin-bottom: .5rem;
+      }
+
+    }
+
+  }
+
+}

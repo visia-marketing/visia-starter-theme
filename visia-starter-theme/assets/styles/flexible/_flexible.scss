@@ -1,0 +1,786 @@
+.flexible-content  {
+  min-height: 400px;
+  padding: 50px 0 100px;
+
+  .flexible-section {
+    //background-color: rgba(#fff,.95);
+    //min-height: 400px;
+    padding: 30px 0;
+    position: relative;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    p, li {
+      font-size: 15px;
+    }
+
+    table, thead, tbody, tr, th, td {
+      border: $primary;
+      color: $primary;
+    }
+
+    th, td {
+      border: 1px solid $primary;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    table {
+      //border-radius: 10px;
+    }
+
+    .flexible-cell {
+      padding-right: 12px;
+      position: relative;
+    }
+
+    &.bg-grey {
+      background-color: rgba($grey,.95);
+      color: #fff;
+      padding: 60px 0;
+
+      h1,h2,h3,h4,h5,h6 { color: #fff; }
+
+    }
+
+    .has-image {
+      padding: 60px 0;
+    }
+
+    .flexible-section-background-image {
+      filter: grayscale(100%);
+      height: 100%;
+      position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+      object-fit: cover;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .row {
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+
+      .underline {
+        border-bottom: 1px solid $gray-rule;
+        margin-bottom: 14px;
+        padding-bottom: 10px;
+      }
+
+      
+
+     
+
+
+    }
+
+    .downloads {
+
+      div.column {
+
+        img {
+          box-shadow: $box-shadow;
+          margin-bottom: 14px;
+          width: 160px;
+
+          &:hover {
+            box-shadow: $box-shadow-2;
+          }
+
+        }
+
+        line-height: 1.2;
+        padding-right: 20px;
+
+        a {
+          color: $black;
+          font-size: 16px;
+          font-weight: 500;
+
+        
+
+        }
+
+      }
+
+
+    }
+
+    
+
+    p, li {
+      font-size: 15px;
+    }
+
+    i[class^="fa-"], i[class*=" fa-"] {
+      color: $primary;
+      font-size: 30px;
+    }
+
+    .button i[class^="fa-"], .button i[class*=" fa-"] {
+      color: $black;
+      font-size: 10px;
+    }
+
+
+
+    .flexible-cell.box-with-image {
+      background-color: #fff;
+      overflow: hidden;
+      padding: 1rem;
+
+      img {
+        height: 220px;
+        margin: -16px -16px 16px -16px;
+        object-fit: cover;
+        max-width: 140%!important;
+        width: calc(100% + 32px);
+      }
+
+      &-grey {
+        background-color: #f9fafb;
+      }
+
+    }  
+
+    .flexible-cell.box-with-image-grey {
+      background-color: #f9fafb;
+      overflow: hidden;
+      padding: 1rem;
+
+      img {
+        height: 220px;
+        margin: -16px -16px 16px -16px;
+        object-fit: cover;
+        max-width: 140%!important;
+        width: calc(100% + 32px);
+      }
+
+    }  
+
+    .flexible-cell.box-shadow {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 1rem;
+
+      h5 {
+        font-weight: 500;
+      }  
+
+    }  
+
+    .landing-intro {
+
+      p, li {
+        font-size: 14.5px;
+      }
+
+
+    }
+
+    .lp-table {
+      border: 1px solid #f4f4f4;
+
+      tbody td, table tbody th {
+        padding: 0.35rem 0.425rem 0.35rem;
+        font-size: 13.5px;
+      }
+
+    }
+
+    
+
+  }
+
+}
+
+/*
+
+.flexible-content  {
+  min-height: 400px;
+  padding: 0 0 4rem;
+
+  // See _misc file for some shared classes (box, shadow, etc)
+
+  .callout {
+      background: rgba(#efefef, .25);
+      border: 1px solid lighten($primary,10%);
+      border-top: 5px solid $primary;
+    }
+
+  // Specific Block Types
+
+  .flexible-large-title {
+    margin: 2rem 0 0;
+
+    h2 {
+      color: $primary;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      position: relative;
+    } 
+
+  }
+
+  .flexible-large-text {
+    margin: 2rem 3rem;
+
+    p {
+      color: $primary;
+      font-size: 1.1725rem;
+    }    
+  
+  } 
+
+  .flexible-section-title {
+    margin: 1.66rem 0 0;
+
+    h2 {
+      color: $primary;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      position: relative;
+    } 
+
+  }
+
+  .flexible-columns {
+    margin: .5rem 0;
+    
+    &.margin-top {
+      margin-top: 2rem;
+    }
+
+    &.margin-bottom {
+      margin-bottom: 2rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.4;
+      margin-bottom: .5rem;
+    }
+
+    h2 {
+      font-size: 1.33rem;
+    }
+
+    ul,ol {
+  
+      li {
+        //padding-bottom: .5rem;
+      }
+
+    }
+
+    table {
+      border: 1px solid #e7e7e7;
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin-bottom: 3rem;
+
+      thead {
+        background: $primary;
+        color: #fff;
+      }
+
+      tr {
+        
+      }
+
+    }
+
+    i.far, i.fad {
+      color: $primary;
+      font-size: 110px;
+      position: relative;
+       left: 15px;
+    }
+
+  }
+
+  
+
+  .flexible-downloads {
+    background-color: #f0f0f0;
+    margin: 1.5rem 0;
+    padding: 3rem 0;
+
+    h6 {
+      color: $black;
+      font-size: 1rem;
+      margin-bottom: 60px;
+      position: relative;
+      text-transform: uppercase;
+      
+      &::after {
+        background-color: $primary;
+        content: "";
+        height: 5px;
+        position: absolute;
+        bottom: -28px;
+        left: 0;
+        width: 80px;
+      }
+
+    }
+
+    img {
+      height: 115px;
+      margin-bottom: 8px;
+      width: auto;
+    }
+
+    span {
+      display: inline-block;
+      font-family: $sans;
+      font-size: .825rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+  }
+
+  .flexible-gallery {
+    padding: 3rem 0;
+
+    .gallery-title {
+      margin-bottom: 32px;
+    }
+
+    .gallery {
+
+      .thumbnail {
+        width: 100%;
+        max-width:240px;
+
+        img {
+          height: 240px; width: 100%; object-fit: cover;
+        }
+
+      }
+
+    }
+
+  }
+  
+}
+
+/*
+
+.cta-banner {
+  background: $primary;
+  background-size: cover;
+  margin: 2rem 0 3rem;
+  padding: 3rem 0;
+  
+  p {
+    color: #fff;
+    font-family: $sans;
+    font-size: 2.125rem;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+
+  strong {
+    color: $primary;
+    display: block;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1.2;
+    margin-top: 1rem;
+    text-transform: uppercase;
+  }
+
+  .button {
+    margin-bottom: 0;
+  }
+
+}
+
+
+
+.flexible-image {
+
+  .flexible-full-image {
+    width: 100%;
+  }
+
+  .flexible-split-image-left {
+    float: left;
+    width: calc(50% - 10px);
+  }
+
+  .flexible-split-image-right {
+    float: right;
+    width: calc(50% - 10px);
+  }
+
+}
+
+.flexible-shared-content {
+
+  h5 {
+    color: $black;
+    font-size: 1.85rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    position: relative;
+    width: 1000px;
+     max-width: 90%;
+      
+    &::after {
+      background-color: $primary;
+      content: "";
+      height: 5px;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 120px;
+    }
+
+  } 
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flexible-content  {
+  //min-height: 400px;
+  padding: 0 0 4rem;
+
+  // Some spacing classes... not sure I will use these
+
+  .mt-30 {margin-top: 30px !important;}
+  .mb-30 {margin-bottom: 30px !important;}
+
+  .mt-45 {margin-top: 45px !important;}
+  .mb-45 {margin-bottom: 45px !important;}
+
+
+  // Shared
+
+  .box-shadow {
+    box-shadow: $box-shadow;
+    padding: 2rem;
+  }
+
+
+
+
+  // Specific Block Types
+
+  .flexible-page-title {
+
+    h2 {
+      color: $black;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 40px;
+      position: relative;
+      width: 1000px;
+       max-width: 90%;
+        
+      &::after {
+        background-color: $blue;
+        content: "";
+        height: 5px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 120px;
+      }
+
+    } 
+
+  }
+
+  .flexible-large-text {
+    color: $blue;
+    font-family: $sans;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  } 
+
+  .cta-banner {
+    background: $primary;
+    background-size: cover;
+    margin: 2rem 0 3rem;
+    padding: 3rem 0;
+    
+    p {
+      color: #fff;
+      font-family: $sans;
+      font-size: 2.125rem;
+      line-height: 1.3;
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: $primary;
+      display: block;
+      font-size: 30px;
+      font-style: italic;
+      line-height: 1.2;
+      margin-top: 1rem;
+      text-transform: uppercase;
+    }
+
+    .button {
+      margin-bottom: 0;
+    }
+
+  }
+
+  // Column Styles
+
+
+  .flexible-columns {
+    margin: .5rem 0 4rem;
+
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.4;
+      margin-bottom: .5rem;
+    }
+
+    h2 {
+      font-size: 1.33rem;
+    }
+
+    ul,ol {
+  
+      li {
+        //padding-bottom: .5rem;
+      }
+
+    }
+
+    table {
+      border: 1px solid #e7e7e7;
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin-bottom: 3rem;
+
+      thead {
+        background: $primary;
+        color: #fff;
+      }
+
+      tr {
+        
+      }
+
+    }
+
+    .view-more {
+      font-weight: 700;
+      text-transform: uppercase;
+
+      svg {
+        height: 15px;
+      }
+
+    }
+
+    .button {margin-bottom: 2rem;}
+
+    .callout {
+      background: rgba(#efefef, .25);
+      border: 1px solid lighten($primary,10%);
+      border-top: 5px solid $primary;
+    }
+
+    .block-wrapper {
+      //background: rgba(#efefef, .25);
+      //border: 1px solid #efefef;
+      margin-top: 2rem;
+      padding: .66rem;
+
+      p {
+        margin-bottom: .5rem;
+      }
+
+      img {
+        line-height: 100px;
+        vertical-align: middle;
+      }
+
+    }
+
+    blockquote {
+      border: none;
+      box-shadow: 0 8px 10px 0 rgba(30,30,30,.15);
+      padding: 1rem;
+    }
+
+    
+
+    .sidebar-right {
+      margin-left: 100px;
+
+      h6 {
+        color: $primary;
+        text-transform: uppercase;
+      }
+
+      ul {
+      
+        li {
+          padding: .33rem 0;
+        }
+
+      }
+
+    }
+
+    .styled-list {
+
+      h6 {
+        color: $primary;
+        text-transform: uppercase;
+      }
+      
+      ul {
+        margin: 0 0 1rem 0;
+        list-style: none;
+
+        li {
+          border-bottom: 1px solid $grey-rule;
+          padding: .55rem 0;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+
+      }
+
+    }
+
+
+  }
+
+  .flexible-image {
+
+    .flexible-full-image {
+      width: 100%;
+    }
+
+    .flexible-split-image-left {
+      float: left;
+      width: calc(50% - 10px);
+    }
+
+    .flexible-split-image-right {
+      float: right;
+      width: calc(50% - 10px);
+    }
+
+  }
+
+  .flexible-downloads {
+    background-color: #f0f0f0;
+    margin: 1.5rem 0;
+    padding: 3rem 0;
+
+    h6 {
+      color: $black;
+      font-size: 1rem;
+      margin-bottom: 60px;
+      position: relative;
+      text-transform: uppercase;
+      
+      &::after {
+        background-color: $primary;
+        content: "";
+        height: 5px;
+        position: absolute;
+        bottom: -28px;
+        left: 0;
+        width: 80px;
+      }
+
+    }
+
+    img {
+      height: 115px;
+      margin-bottom: 8px;
+      width: auto;
+    }
+
+    span {
+      display: inline-block;
+      font-family: $sans;
+      font-size: .825rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+  }
+
+  .flexible-shared-content {
+
+    h5 {
+      color: $black;
+      font-size: 1.85rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 40px;
+      position: relative;
+      width: 1000px;
+       max-width: 90%;
+        
+      &::after {
+        background-color: $primary;
+        content: "";
+        height: 5px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 120px;
+      }
+
+    } 
+  
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+  
+}
+
+*/
